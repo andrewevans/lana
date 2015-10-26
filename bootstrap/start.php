@@ -1,4 +1,6 @@
 <?php
+define('HOST_PROD', 'theaboutfaces.com');
+define('HOST_LOCAL', 'andrew.com');
 
 /*
 |--------------------------------------------------------------------------
@@ -24,11 +26,9 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
-
-	'local' => array('homestead'),
-
-));
+$env = $app->detectEnvironment(function() {
+    return (strpos(gethostname(), HOST_PROD) !== false ? 'production' : 'local');
+});
 
 /*
 |--------------------------------------------------------------------------
