@@ -1,1 +1,1 @@
-The home index
+@extends('layouts.master')
