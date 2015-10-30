@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,7 +19,41 @@
     <![endif]-->
 </head>
 <body>
-<h1>Hello, world!</h1>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron" style="padding-top: 0; padding-bottom: 0; margin-bottom: 0;">
+    <div class="container splash-001">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Bullshit Found<span class="tiny">&#x2588;</span></h2>
+            </div>
+            <div class="col-md-6 intro">
+                <p>The words blur together, an amalgamation of <span class="stronger">stone soup</span>, snake oil, accidental honesty, and <span class="sharper">pure lies</span>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" style="float: none">
+                <li class="active"><a href="#">Aboutface</a></li>
+                <li><a href="#">Guess Who?</a></li>
+                <li><a href="#">Local Edition</a></li>
+                <li class="pull-right"><a href="#">About</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
 
 @yield('content')
 
