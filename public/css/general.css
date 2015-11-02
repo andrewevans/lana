@@ -1,0 +1,74 @@
+/**
+The Bass of the visual
+*/
+
+body {
+    background: #ccc;
+}
+
+/* Bootstrap overrides */
+.jumbotron {
+    background-color: #000;
+    color: #ccc;
+}
+
+h2 {
+    font-size: 9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.9em;
+}
+/* END */
+
+h2 .tiny {
+    font-size: 0.3em;
+}
+
+h3.headline {
+    font-size: 5em;
+}
+
+p.tagline {
+    font-size: 2em;
+    line-height: 1.2em;
+    font-style: italic;
+}
+
+span.black {
+    background: #000;
+    color: #fff;
+}
+
+span.white {
+    background: #fff;
+    color: #000;
+}
+
+/* Splashes */
+.splash-001 {
+    position: relative;
+    height: 500px;
+    background-image: url(/img/theme/modern-world/in-the-modern-world.gif);
+    background-position: 0px -150px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.splash-001 .intro {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.splash-001 .intro > p {
+    font-size: 1.9em;
+    line-height: 1.4em;
+}
+
+.stronger {
+    font-weight: bold;
+}
+
+.sharper {
+    font-family: "Courier New";
+}
