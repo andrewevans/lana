@@ -34,7 +34,7 @@
     </div>
 </div>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse mainNav">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -47,8 +47,9 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav" style="float: none">
                 <li class="active"><a href="#">Aboutface</a></li>
-                <li><a href="#">Guess Who?</a></li>
+                <li><a href="#">'They'</a></li>
                 <li><a href="#">Local Edition</a></li>
+                <li class="pull-right" style="font-family: 'Courier New';"><a href="#">Devs_</a></li>
                 <li class="pull-right"><a href="#">About</a></li>
             </ul>
         </div><!--/.nav-collapse -->

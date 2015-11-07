@@ -72,3 +72,12 @@ span.white {
 .sharper {
     font-family: "Courier New";
 }
+
+/* Navigation */
+.navbar.mainNav li > a {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
