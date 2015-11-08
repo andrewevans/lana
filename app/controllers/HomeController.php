@@ -17,7 +17,12 @@ class HomeController extends BaseController {
 
     public function index()
     {
-        return View::make('home.index');
+        $query = new WP_Query();
+        $posts = $query->get_posts();
+
+        return View::make('home.index',[
+                'posts' => $posts,
+        ]);
     }
 
 	public function showWelcome()

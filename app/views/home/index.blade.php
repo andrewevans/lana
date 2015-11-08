@@ -20,5 +20,17 @@
             <div style="width: 80%; height: 400px; background: #000"></div>
         </div>
     </div>
+
+    @foreach ($posts as $post)
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                <h3><a href="{{ get_permalink($post->ID) }}">{{ $post->post_title }}</a></h3>
+                {{ apply_filters('the_excerpt',$post->post_excerpt); }} <a href="{{ get_permalink($post->ID) }}">Read more&hellip;</a>
+            </div>
+        </div>
+    </div>
+    @endforeach
+
 </div>
 @stop
