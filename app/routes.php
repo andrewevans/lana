@@ -13,3 +13,5 @@
 Route::get('/', ['as' => 'home.index', 'uses' => 'HomeController@index']);
 
 Route::get('local-edition', ['as' => 'localedition.index', 'uses' => 'LocaleditionController@index']);
+
+Route::get('they', ['as' => 'they.index', 'uses' => 'TheyController@index']);
