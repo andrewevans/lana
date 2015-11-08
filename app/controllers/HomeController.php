@@ -21,7 +21,9 @@ class HomeController extends BaseController {
         $posts = $query->get_posts();
 
         return View::make('home.index',[
-                'posts' => $posts,
+            'page_title' => html_entity_decode(get_bloginfo('name'), ENT_QUOTES, 'UTF-8'),
+            'page_description' => html_entity_decode(get_bloginfo('description'), ENT_QUOTES, 'UTF-8'),
+            'posts' => $posts,
         ]);
     }
 

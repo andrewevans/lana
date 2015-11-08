@@ -191,4 +191,12 @@ return array(
 
 	),
 
+    /**
+     * Default values for views
+     */
+    'defaults' => [
+        'page_title' => html_entity_decode(get_bloginfo('name'), ENT_QUOTES, 'UTF-8'),
+        'page_keywords' => 'hypocrisy, politics, news', // @TODO: Store in WP General Settings
+        'page_description' => html_entity_decode(get_bloginfo('description'), ENT_QUOTES, 'UTF-8'),
+    ],
 );
