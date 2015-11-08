@@ -50,7 +50,7 @@
             <ul class="nav navbar-nav" style="float: none">
                 <li class="active"><a href="#">Aboutface</a></li>
                 <li><a href="#">'They'</a></li>
-                <li><a href="#">Local Edition</a></li>
+                <li><a href="/local-edition">Local Edition</a></li>
                 <li class="pull-right" style="font-family: 'Courier New';"><a href="#">Devs_</a></li>
                 <li class="pull-right"><a href="#">About</a></li>
             </ul>
