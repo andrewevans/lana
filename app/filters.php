@@ -88,3 +88,20 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+/**
+ * Get all posts within category (by slug)
+ */
+View::composer('widgets.posts', function($view){
+    $args = array(
+        'category_name'    => $view->filter,
+        'post_type'        => 'post',
+        'orderby'          => 'post_date',
+        'order'            => 'DESC',
+        'post_status'      => 'publish',
+        'suppress_filters' => true );
+
+    $posts = get_posts( $args );
+
+    $view->with('posts', $posts);
+});
