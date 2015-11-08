@@ -17,13 +17,9 @@ class HomeController extends BaseController {
 
     public function index()
     {
-        $query = new WP_Query();
-        $posts = $query->get_posts();
-
         return View::make('home.index',[
             'page_title' => html_entity_decode(get_bloginfo('name'), ENT_QUOTES, 'UTF-8'),
             'page_description' => html_entity_decode(get_bloginfo('description'), ENT_QUOTES, 'UTF-8'),
-            'posts' => $posts,
         ]);
     }
 
