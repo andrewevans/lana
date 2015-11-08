@@ -2,6 +2,9 @@
 define('HOST_PROD', 'theaboutfaces.com');
 define('HOST_LOCAL', 'andrew.com');
 
+define('WP_USE_THEMES', false);
+require __DIR__.'/../wordpress/wp-blog-header.php';
+
 /*
 |--------------------------------------------------------------------------
 | Create The Application
