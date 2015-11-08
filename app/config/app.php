@@ -196,7 +196,7 @@ return array(
      */
     'defaults' => [
         'page_title' => html_entity_decode(get_bloginfo('name'), ENT_QUOTES, 'UTF-8'),
-        'page_keywords' => 'hypocrisy, politics, news', // @TODO: Store in WP General Settings
+        'page_keywords' => html_entity_decode(get_option('site_keywords'), ENT_QUOTES, 'UTF-8'),
         'page_description' => html_entity_decode(get_bloginfo('description'), ENT_QUOTES, 'UTF-8'),
     ],
 );
