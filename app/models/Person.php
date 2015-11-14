@@ -8,4 +8,9 @@ class Person extends Eloquent
     protected $table = 'people';
 
     protected $guarded = []; // @TODO: Consider which attributes are not mass assignable
+
+    public function url()
+    {
+        return '/people/' . $this->url_slug;
+    }
 }
