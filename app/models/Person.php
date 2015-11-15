@@ -1,7 +1,7 @@
 <?php
 // app/models/Person.php
 
-class Person extends Eloquent
+class Person extends SleepingOwl\Models\SleepingOwlModel
 {
     public $timestamp = false;
 
