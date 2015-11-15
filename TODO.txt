@@ -21,3 +21,4 @@ composer clearcache
 dont start with slash:
 php artisan admin:model "Person" --title="People"
 
+use wikipedia taxonomy, need a taxonomy!!
