@@ -1,2 +1,23 @@
 get git good.
 
+elixir
+node.js
+npm
+react
+browserify
+gulp
+grunt
+homebrew
+
+console.log("%cStop!","font-size:48px; font-weight: bold; color: red;");
+
+ERROR/WARNING:
+file_put_contents(/Users/vesper/.composer/cache/repo/https---packagist.org/provider-illuminate$remote.json): failed to open stream: Permission denied
+http://packagist.org could not be fully loaded, package information was loaded from the local cache and may be out of date
+
+SOLVED WITH:
+composer clearcache
+
+dont start with slash:
+php artisan admin:model "Person" --title="People"
+

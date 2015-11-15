@@ -6,7 +6,8 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"twbs/bootstrap": "^3.3",
-		"fzaninotto/faker": "^1.5"
+		"fzaninotto/faker": "^1.5",
+		"sleeping-owl/admin": "1.x"
 	},
 	"autoload": {
 		"classmap": [

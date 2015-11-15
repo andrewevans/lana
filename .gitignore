@@ -11,3 +11,5 @@ Thumbs.db
 /wordpress/wp-config.php
 /wordpress/wp-config-sample.php
 /wordpress/wp-admin/error_log
+/public/packages
+npm-debug.log
