@@ -103,5 +103,7 @@ View::composer('widgets.posts', function($view){
 
     $posts = get_posts( $args );
 
+    // @TODO: Check for section to prepend URL
+
     $view->with('posts', $posts);
 });

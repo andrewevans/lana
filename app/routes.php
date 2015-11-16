@@ -12,7 +12,13 @@
 */
 Route::get('/', ['as' => 'home.index', 'uses' => 'HomeController@index']);
 
-Route::get('local-edition', ['as' => 'localedition.index', 'uses' => 'LocaleditionController@index']);
+
+Route::group(array('prefix' => 'local-edition'), function () {
+
+    Route::get('/', ['as' => 'localedition.index', 'uses' => 'LocaleditionController@index']);
+    Route::get('{url_slug}', ['as' => 'localedition.show', 'uses' => 'LocaleditionController@show']);
+
+});
 
 Route::get('they', ['as' => 'they.index', 'uses' => 'TheyController@index']);
 

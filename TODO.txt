@@ -22,3 +22,9 @@ dont start with slash:
 php artisan admin:model "Person" --title="People"
 
 use wikipedia taxonomy, need a taxonomy!!
+
+single sign-on
+
+specific color on side, like fb, not just white. make it noticeable from afar
+
+Stick sand Stones

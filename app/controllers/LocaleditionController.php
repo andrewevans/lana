@@ -19,4 +19,24 @@ class LocaleditionController extends \BaseController {
             'slug' => $this->slug,
         ]);
     }
+
+
+    public function show($wp_url_slug = null)
+    {
+        $args = array(
+            'name'         => $wp_url_slug,
+            'post_type'        => 'post',
+            'orderby'          => 'post_date',
+            'order'            => 'DESC',
+            'post_status'      => 'publish',
+            'suppress_filters' => true );
+
+        $post = current( get_posts( $args ) );
+
+        // @TODO: Prepend URL with section url slug like: /local-edition/2015/12/31/my-post-here
+
+        return View::make('localedition.show',[
+            'post' => $post,
+        ]);
+    }
 }
