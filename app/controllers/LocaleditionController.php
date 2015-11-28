@@ -20,20 +20,15 @@ class LocaleditionController extends \BaseController {
         ]);
     }
 
-
-    public function show($wp_url_slug = null)
+    public function show($year, $month, $day, $wp_url_slug)
     {
-        $args = array(
-            'name'         => $wp_url_slug,
-            'post_type'        => 'post',
-            'orderby'          => 'post_date',
-            'order'            => 'DESC',
-            'post_status'      => 'publish',
-            'suppress_filters' => true );
 
-        $post = current( get_posts( $args ) );
+        $post = Tools::get_post_by_slug($wp_url_slug);
 
-        // @TODO: Prepend URL with section url slug like: /local-edition/2015/12/31/my-post-here
+        // 404 any URLs that do not match the proper pattern
+        if (! $post || ! Request::is($this->slug . Tools::permalink_path($post))) {
+            return Response::view('errors.missing', array(), 404);
+        }
 
         return View::make('localedition.show',[
             'post' => $post,

@@ -81,3 +81,7 @@ span.white {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
+.code {
+    font-family: 'Courier New';
+}

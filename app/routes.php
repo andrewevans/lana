@@ -16,8 +16,7 @@ Route::get('/', ['as' => 'home.index', 'uses' => 'HomeController@index']);
 Route::group(array('prefix' => 'local-edition'), function () {
 
     Route::get('/', ['as' => 'localedition.index', 'uses' => 'LocaleditionController@index']);
-    Route::get('{url_slug}', ['as' => 'localedition.show', 'uses' => 'LocaleditionController@show']);
-
+    Route::get('{year}/{month}/{day}/{person_url_slug}', ['as' => 'localedition.show', 'uses' => 'LocaleditionController@show']);
 });
 
 Route::get('they', ['as' => 'they.index', 'uses' => 'TheyController@index']);
@@ -25,5 +24,4 @@ Route::get('they', ['as' => 'they.index', 'uses' => 'TheyController@index']);
 Route::group(array('prefix' => 'people'), function() {
 
     Route::get('/', ['as' => 'people.index', 'uses' => 'PeopleController@index']);
-    Route::get('{person_url_slug}',  ['as' => 'person.show', 'uses' => 'PeopleController@show']);
 });
