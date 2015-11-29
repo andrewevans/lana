@@ -16,4 +16,9 @@ class Tools {
     {
         return get_post(url_to_postid(home_url() . '/' . $permalink_path));
     }
+
+    public static function get_permalink_path_from_post(WP_Post $post)
+    {
+        return str_replace(home_url(), '', get_permalink($post->ID));
+    }
 }
