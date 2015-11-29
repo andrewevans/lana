@@ -16,7 +16,8 @@ Route::get('/', ['as' => 'home.index', 'uses' => 'HomeController@index']);
 Route::group(array('prefix' => 'local-edition'), function () {
 
     Route::get('/', ['as' => 'localedition.index', 'uses' => 'LocaleditionController@index']);
-    Route::get('{year}/{month}/{day}/{person_url_slug}', ['as' => 'localedition.show', 'uses' => 'LocaleditionController@show']);
+    Route::get('{permalink_path}', ['as' => 'localedition.show', 'uses' => 'LocaleditionController@show'])
+        ->where('permalink_path', '(.*)');; // ex: '2010/06/05/my-house'
 });
 
 Route::get('they', ['as' => 'they.index', 'uses' => 'TheyController@index']);

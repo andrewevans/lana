@@ -20,13 +20,12 @@ class LocaleditionController extends \BaseController {
         ]);
     }
 
-    public function show($year, $month, $day, $wp_url_slug)
+    public function show($permalink_path)
     {
-
-        $post = Tools::get_post_by_slug($wp_url_slug);
+        $post = Tools::get_post_from_permalink_path($permalink_path);
 
         // 404 any URLs that do not match the proper pattern
-        if (! $post || ! Request::is($this->slug . Tools::permalink_path($post))) {
+        if (! $post) {
             return Response::view('errors.missing', array(), 404);
         }
 

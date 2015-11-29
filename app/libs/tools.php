@@ -9,24 +9,11 @@ class Tools {
     }
 
     /**
-     * @param WP_Post $post
-     * @return bool|mixed - permalink path of a WP post (ex: /2010/06/05/my-title/)
+     * @param $permalink_path - Permalink without the WP Site Address (ex: '2010/06/05/my-house')
+     * @return array|null|WP_Post
      */
-    public static function permalink_path(WP_Post $post)
+    public static function get_post_from_permalink_path($permalink_path)
     {
-        return str_replace(home_url(), '', rtrim(get_permalink ($post->ID), '/'));
-    }
-
-    public static function get_post_by_slug($wp_url_slug)
-    {
-        $args = array(
-            'name'         => $wp_url_slug,
-            'post_type'        => 'post',
-            'orderby'          => 'post_date',
-            'order'            => 'DESC',
-            'post_status'      => 'publish',
-            'suppress_filters' => true );
-
-        return current( get_posts( $args ) );
+        return get_post(url_to_postid(home_url() . '/' . $permalink_path));
     }
 }
