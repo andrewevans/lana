@@ -1,18 +1,5 @@
-/*
- Theme Name:   Twenty Fifteen Child
- Theme URI:    http://example.com/twenty-fifteen-child/
- Description:  Twenty Fifteen Child Theme
- Author:       Lana
- Author URI:   http://example.com
- Template:     twentyfifteen
- Version:      1.0.0
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  twenty-fifteen-child
-*/
-
-body .ml-city-country-theirs {
+body#tinymce.wp-editor .ml-city-country {
+    background: #f0f;
     background-color:#33bdef;
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
@@ -24,7 +11,12 @@ body .ml-city-country-theirs {
     padding:6px 24px;
 }
 
-body .ml-country-theirs {
+body#tinymce.wp-editor a {
+    color: #4CA6CF;
+}
+
+body#tinymce.wp-editor .ml-city-country-theirs {
+    background: #f0f;
     background-color:#33bdef;
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
@@ -36,7 +28,21 @@ body .ml-country-theirs {
     padding:6px 24px;
 }
 
-body .ml-city-country-mine {
+body#tinymce.wp-editor .ml-country-theirs {
+    background: #f0f;
+    background-color:#33bdef;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #057fd0;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    padding:6px 24px;
+}
+
+body#tinymce.wp-editor .ml-city-country-mine {
+    background: #f00;
     background-color:#f00;
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
