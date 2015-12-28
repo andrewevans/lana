@@ -28,7 +28,8 @@ body#tinymce.wp-editor .ml-city-country-theirs {
     padding:6px 24px;
 }
 
-body#tinymce.wp-editor .ml-country-theirs {
+body#tinymce.wp-editor .ml-country-theirs,
+body#tinymce.wp-editor .ml-country-theirs-abbrev {
     background: #f0f;
     background-color:#33bdef;
     -moz-border-radius:6px;
@@ -41,7 +42,8 @@ body#tinymce.wp-editor .ml-country-theirs {
     padding:6px 24px;
 }
 
-body#tinymce.wp-editor .ml-city-country-mine {
+body#tinymce.wp-editor .ml-city-country-mine,
+body#tinymce.wp-editor .ml-city-mine {
     background: #f00;
     background-color:#f00;
     -moz-border-radius:6px;

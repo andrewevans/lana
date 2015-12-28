@@ -24,13 +24,53 @@ class LocaleditionController extends \BaseController {
     {
         $post = Tools::get_post_from_permalink_path($permalink_path);
 
+        # Create a DOM parser object
+        $dom = new DOMDocument();
+
+        # Parse the HTML from the post.
+        # The @ before the method call suppresses any warnings that
+        # loadHTML might throw because of invalid HTML in the page.
+        @$dom->loadHTML($post->post_content);
+
+        $spans = $dom->getElementsByTagName('span');
+
+        # Iterate over all the <span> tags
+        foreach($spans as $link) {
+
+            $class_name = $link->getAttribute('class');
+
+            switch ($class_name) {
+                case 'ml-country-theirs':
+                    $link->nodeValue = 'Alameda County Sheriffs Department';
+                    break;
+
+                case 'ml-country-theirs-abbrev':
+                    $link->nodeValue = 'Sheriffs Department';
+                    break;
+
+                case 'ml-city-country-mine':
+                    $link->nodeValue = 'Berkeley, CA';
+                    break;
+
+                case 'ml-city-mine':
+                    $link->nodeValue = 'Berkeley';
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
         // 404 any URLs that do not match the proper pattern
         if (! $post) {
             return Response::view('errors.missing', array(), 404);
         }
 
+        $local_edition_post = $dom->saveHTML();
+
         return View::make('localedition.show',[
             'post' => $post,
+            'local_edition_post' => $local_edition_post,
         ]);
     }
 }

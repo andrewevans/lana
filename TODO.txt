@@ -28,3 +28,16 @@ single sign-on
 specific color on side, like fb, not just white. make it noticeable from afar
 
 Stick sand Stones
+
+sleeping owl
+
+unit tests
+selenium
+
+bloodhound
+
+livefyre comments
+
+mailchimp
+
+needs to 301 redirect from lana, like how WP does for permalink changes

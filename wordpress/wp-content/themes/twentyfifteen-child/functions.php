@@ -64,6 +64,12 @@ function my_mce_before_init_insert_formats( $init_array ) {
             'wrapper' => false,
         ),
         array(
+            'title' => 'ML: Country [theirs] (abbrev)',
+            'inline' => 'span',
+            'classes' => 'ml-country-theirs-abbrev',
+            'wrapper' => false,
+        ),
+        array(
             'title' => 'ML: City [theirs]',
             'inline' => 'span',
             'classes' => 'ml-city-theirs',
