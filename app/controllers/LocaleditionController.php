@@ -44,6 +44,10 @@ class LocaleditionController extends \BaseController {
                     $link->nodeValue = 'Alameda County Sheriffs Department';
                     break;
 
+                case 'ml-military-theirs':
+                    $link->nodeValue = 'Alameda County Sheriffs Department';
+                    break;
+
                 case 'ml-country-theirs-abbrev':
                     $link->nodeValue = 'Sheriffs Department';
                     break;
@@ -54,6 +58,22 @@ class LocaleditionController extends \BaseController {
 
                 case 'ml-city-mine':
                     $link->nodeValue = 'Berkeley';
+                    break;
+
+                case 'ml-country-mine':
+                    $link->nodeValue = 'California';
+                    break;
+
+                case 'ml-military-mine':
+                    $link->nodeValue = 'Alameda County Sheriffs Department';
+                    break;
+
+                case 'ml-badguy-mine':
+                    $link->nodeValue = 'organized gang';
+                    break;
+
+                case 'ml-badperson-mine':
+                    $link->nodeValue = 'former LA Clippers owner Don Sterling';
                     break;
 
                 default:

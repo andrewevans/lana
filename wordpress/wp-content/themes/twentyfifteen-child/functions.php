@@ -75,6 +75,24 @@ function my_mce_before_init_insert_formats( $init_array ) {
             'classes' => 'ml-city-theirs',
             'wrapper' => false,
         ),
+        array(
+            'title' => 'ML: Military [mine]',
+            'inline' => 'span',
+            'classes' => 'ml-military-mine',
+            'wrapper' => false,
+        ),
+        array(
+            'title' => 'ML: Bad Guy [mine]',
+            'inline' => 'span',
+            'classes' => 'ml-badguy-mine',
+            'wrapper' => false,
+        ),
+        array(
+            'title' => 'ML: Bad Person [mine]',
+            'inline' => 'span',
+            'classes' => 'ml-badperson-mine',
+            'wrapper' => false,
+        ),
     );
     // Insert the array, JSON ENCODED, into 'style_formats'
     $init_array['style_formats'] = json_encode( $style_formats );

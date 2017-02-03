@@ -55,3 +55,31 @@ body#tinymce.wp-editor .ml-city-mine {
     color:#ffffff;
     padding:6px 24px;
 }
+
+body#tinymce.wp-editor .ml-country-mine {
+    background: #f33;
+    background-color:#f33;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #057fd0;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    padding:6px 24px;
+}
+
+body#tinymce.wp-editor .ml-military-mine,
+body#tinymce.wp-editor .ml-badguy-mine,
+body#tinymce.wp-editor .ml-badperson-mine {
+    background: #f11;
+    background-color:#f11;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #057fd0;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    padding:6px 24px;
+}
