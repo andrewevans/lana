@@ -12,31 +12,13 @@
  Text Domain:  twenty-fifteen-child
 */
 
-body .ml-city-country-theirs {
-    background-color:#33bdef;
-    -moz-border-radius:6px;
-    -webkit-border-radius:6px;
-    border-radius:6px;
-    border:1px solid #057fd0;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    padding:6px 24px;
-}
-
-body .ml-country-theirs {
-    background-color:#33bdef;
-    -moz-border-radius:6px;
-    -webkit-border-radius:6px;
-    border-radius:6px;
-    border:1px solid #057fd0;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    padding:6px 24px;
-}
-
-body .ml-city-country-mine {
+body .ml-city,
+body .ml-state,
+body .ml-country,
+body .ml-armed-forces,
+body .ml-armed-forces-hq,
+body .ml-enemy-group,
+body .ml-region {
     background-color:#f00;
     -moz-border-radius:6px;
     -webkit-border-radius:6px;

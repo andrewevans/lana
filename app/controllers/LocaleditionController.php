@@ -40,40 +40,30 @@ class LocaleditionController extends \BaseController {
             $class_name = $link->getAttribute('class');
 
             switch ($class_name) {
-                case 'ml-country-theirs':
-                    $link->nodeValue = 'Alameda County Sheriffs Department';
-                    break;
-
-                case 'ml-military-theirs':
-                    $link->nodeValue = 'Alameda County Sheriffs Department';
-                    break;
-
-                case 'ml-country-theirs-abbrev':
-                    $link->nodeValue = 'Sheriffs Department';
-                    break;
-
-                case 'ml-city-country-mine':
-                    $link->nodeValue = 'Berkeley, CA';
-                    break;
-
-                case 'ml-city-mine':
+                case 'ml-city':
                     $link->nodeValue = 'Berkeley';
                     break;
 
-                case 'ml-country-mine':
+                case 'ml-state':
+                case 'ml-country':
                     $link->nodeValue = 'California';
                     break;
 
-                case 'ml-military-mine':
-                    $link->nodeValue = 'Alameda County Sheriffs Department';
+                case 'ml-armed-forces':
+                case 'ml-armed-forces-hq':
+                    $link->nodeValue = 'police officers';
                     break;
 
-                case 'ml-badguy-mine':
-                    $link->nodeValue = 'organized gang';
+                case 'ml-enemy-group':
+                    $link->nodeValue = 'local organized crime syndicate';
                     break;
 
-                case 'ml-badperson-mine':
-                    $link->nodeValue = 'former LA Clippers owner Don Sterling';
+                case 'ml-region':
+                    $link->nodeValue = 'west coast';
+                    break;
+
+                case 'ml-country-noun':
+                    $link->nodeValue = 'region';
                     break;
 
                 default:

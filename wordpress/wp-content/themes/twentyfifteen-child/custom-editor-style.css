@@ -1,6 +1,12 @@
-body#tinymce.wp-editor .ml-city-country {
-    background: #f0f;
-    background-color:#33bdef;
+body#tinymce.wp-editor .ml-city,
+body#tinymce.wp-editor .ml-state,
+body#tinymce.wp-editor .ml-country,
+body#tinymce.wp-editor .ml-armed-forces,
+body#tinymce.wp-editor .ml-armed-forces-hq,
+body#tinymce.wp-editor .ml-enemy-group,
+body#tinymce.wp-editor .ml-region,
+body#tinymce.wp-editor .ml-country-noun {
+    background-color:#008080;
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
     border-radius:6px;
@@ -11,75 +17,50 @@ body#tinymce.wp-editor .ml-city-country {
     padding:6px 24px;
 }
 
-body#tinymce.wp-editor a {
-    color: #4CA6CF;
+body#tinymce.wp-editor .ml-city::before,
+body#tinymce.wp-editor .ml-state::before,
+body#tinymce.wp-editor .ml-country::before,
+body#tinymce.wp-editor .ml-armed-forces::before,
+body#tinymce.wp-editor .ml-armed-forces-hq::before,
+body#tinymce.wp-editor .ml-enemy-group::before,
+body#tinymce.wp-editor .ml-region::before,
+body#tinymce.wp-editor .ml-country-noun::before {
+    vertical-align: super;
+    font-size: 0.6em;
+    font-weight: bold;
+    font-style: italic;
+    color: #ff0;
 }
 
-body#tinymce.wp-editor .ml-city-country-theirs {
-    background: #f0f;
-    background-color:#33bdef;
-    -moz-border-radius:6px;
-    -webkit-border-radius:6px;
-    border-radius:6px;
-    border:1px solid #057fd0;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    padding:6px 24px;
+
+body#tinymce.wp-editor .ml-city::before {
+    content: "[city]";
 }
 
-body#tinymce.wp-editor .ml-country-theirs,
-body#tinymce.wp-editor .ml-country-theirs-abbrev {
-    background: #f0f;
-    background-color:#33bdef;
-    -moz-border-radius:6px;
-    -webkit-border-radius:6px;
-    border-radius:6px;
-    border:1px solid #057fd0;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    padding:6px 24px;
+body#tinymce.wp-editor .ml-state::before {
+    content: "[state]";
 }
 
-body#tinymce.wp-editor .ml-city-country-mine,
-body#tinymce.wp-editor .ml-city-mine {
-    background: #f00;
-    background-color:#f00;
-    -moz-border-radius:6px;
-    -webkit-border-radius:6px;
-    border-radius:6px;
-    border:1px solid #057fd0;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    padding:6px 24px;
+body#tinymce.wp-editor .ml-country::before {
+    content: "[country]";
 }
 
-body#tinymce.wp-editor .ml-country-mine {
-    background: #f33;
-    background-color:#f33;
-    -moz-border-radius:6px;
-    -webkit-border-radius:6px;
-    border-radius:6px;
-    border:1px solid #057fd0;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    padding:6px 24px;
+body#tinymce.wp-editor .ml-armed-forces::before {
+    content: "[armed forces]";
 }
 
-body#tinymce.wp-editor .ml-military-mine,
-body#tinymce.wp-editor .ml-badguy-mine,
-body#tinymce.wp-editor .ml-badperson-mine {
-    background: #f11;
-    background-color:#f11;
-    -moz-border-radius:6px;
-    -webkit-border-radius:6px;
-    border-radius:6px;
-    border:1px solid #057fd0;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    padding:6px 24px;
+body#tinymce.wp-editor .ml-armed-forces-hq::before {
+    content: "[armed forces hq]";
+}
+
+body#tinymce.wp-editor .ml-enemy-group::before {
+    content: "[enemy group]";
+}
+
+body#tinymce.wp-editor .ml-region::before {
+    content: "[region]";
+}
+
+body#tinymce.wp-editor .ml-country-noun::before {
+    content: "[country noun]";
 }
