@@ -5,7 +5,8 @@ body#tinymce.wp-editor .ml-armed-forces,
 body#tinymce.wp-editor .ml-armed-forces-hq,
 body#tinymce.wp-editor .ml-enemy-group,
 body#tinymce.wp-editor .ml-region,
-body#tinymce.wp-editor .ml-country-noun {
+body#tinymce.wp-editor .ml-country-noun,
+body#tinymce.wp-editor .ml-victim-group {
     background-color:#008080;
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
@@ -24,7 +25,8 @@ body#tinymce.wp-editor .ml-armed-forces::before,
 body#tinymce.wp-editor .ml-armed-forces-hq::before,
 body#tinymce.wp-editor .ml-enemy-group::before,
 body#tinymce.wp-editor .ml-region::before,
-body#tinymce.wp-editor .ml-country-noun::before {
+body#tinymce.wp-editor .ml-country-noun::before,
+body#tinymce.wp-editor .ml-victim-group::before {
     vertical-align: super;
     font-size: 0.6em;
     font-weight: bold;
@@ -63,4 +65,8 @@ body#tinymce.wp-editor .ml-region::before {
 
 body#tinymce.wp-editor .ml-country-noun::before {
     content: "[country noun]";
+}
+
+body#tinymce.wp-editor .ml-victim-group::before {
+    content: "[victim group]";
 }

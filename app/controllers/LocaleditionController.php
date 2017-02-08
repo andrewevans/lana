@@ -66,6 +66,10 @@ class LocaleditionController extends \BaseController {
                     $link->nodeValue = 'region';
                     break;
 
+                case 'ml-victim-group':
+                    $link->nodeValue = 'Berkeley residents';
+                    break;
+
                 default:
                     break;
             }

@@ -81,6 +81,12 @@ function my_mce_before_init_insert_formats( $init_array ) {
             'classes' => 'ml-country-noun',
             'wrapper' => false,
         ),
+        array(
+            'title' => 'ML: victim group',
+            'inline' => 'span',
+            'classes' => 'ml-victim-group',
+            'wrapper' => false,
+        ),
     );
     // Insert the array, JSON ENCODED, into 'style_formats'
     $init_array['style_formats'] = json_encode( $style_formats );
